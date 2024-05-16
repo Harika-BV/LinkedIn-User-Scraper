@@ -5,7 +5,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='linkedin_user_scrape',
-    version='1.0.5',
+    version='1.0.6',
     author='Harika B V',
     author_email='harikabv.dev@gmail.com',
     description='LinkedIn scraper to parse user profiles',

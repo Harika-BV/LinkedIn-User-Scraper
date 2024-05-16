@@ -120,13 +120,13 @@ def get_work_experience_detais(driver, userId, cookie, email, password):
                 job_summary = ""
 
             if(bool(match)):
-                workExperience.append([
+                workExperience.append(
                     {
                         "Title" : titleUnique,
                         "Company" : companyUnique,
                         "Duration" : duration,
                         "Summary" : job_summary
-                    }]
+                    }
                 )
             else:
                 companyCache = titleUnique
@@ -196,13 +196,13 @@ def get_education_details(driver, userId, cookie, email, password):
             for data in summaryDetails:
                 summaryDetailsData = summaryDetailsData + " " + data.text.strip()
             
-            education.append([
+            education.append(
                 {
                     "Institute" : instituteDetails,
                     "Course" : courseDetails,
                     "Duration" : duration,
                     "Summary" : summaryDetailsData
-                }]
+                }
             )
     return education
 
